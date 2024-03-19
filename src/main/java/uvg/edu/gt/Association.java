@@ -1,7 +1,5 @@
 package uvg.edu.gt;
 
-import java.util.Map;
-
 public class Association<K extends Comparable<K>,V> implements Comparable<Association<K, V>> {
     private K key;
     private V value;
@@ -20,8 +18,6 @@ public class Association<K extends Comparable<K>,V> implements Comparable<Associ
         return value;
     }
 
-    public V setValue(V value) {
-        return null;
+    public void setValue(V value) {
     }
-
 }
