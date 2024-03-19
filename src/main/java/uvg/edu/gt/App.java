@@ -15,7 +15,7 @@ public class App
         while(true){
             System.out.println("Bienvenido al programa de traduccion, ingrese el numero correspondiente a la ocpion:");
             System.out.println("1. Imprimir el diccionario, recorriendo el diccionario in order");
-            System.out.println("2. Traducir una frase de ingles a español");
+            System.out.println("2. Traducir el archivo proporcionado");
             int mainSelect = scanner.nextInt();
             switch (mainSelect){
                 case 1:
@@ -24,6 +24,7 @@ public class App
                     }
                     break;
                 case 2:
+
 
             }
         }

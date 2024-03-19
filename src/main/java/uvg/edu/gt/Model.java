@@ -18,7 +18,7 @@ public class Model {
     private void readFile(){
         ArrayList<String> tempList = new ArrayList<String>();
         String line;
-        try (BufferedReader br = new BufferedReader(new FileReader("data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("diccionario.txt"))) {
             while ((line = br.readLine()) != null) {
                 tempList.add(line);
             }
