@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Model {
-    private BinarySearchTree<Association<String, String>> binarySearchTree;
+    private BinarySearchTree<String, String> binarySearchTree;
     private ArrayList<Association<String, String>> dictionaryList;
     public Model(){
         binarySearchTree = new BinarySearchTree<>();
@@ -28,8 +28,7 @@ public class Model {
         for (String currentString : tempList){
             String updatedString = currentString.replaceAll("[( )]", "");
             String[] separated = updatedString.split(",");
-            Association<String, String> currentAssociation = new Association<String, String>(separated[0], separated[1]);
-            binarySearchTree.add(currentAssociation);
+            binarySearchTree.add(separated[0], separated[1]);
         }
     }
     public ArrayList<Association<String, String>> getDictionaryList(){
