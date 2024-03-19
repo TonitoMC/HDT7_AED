@@ -46,7 +46,7 @@ public class Model {
         for (String currentString : tempList){
             String updatedString = currentString.replaceAll("[( )]", "");
             String[] separated = updatedString.split(",");
-            binarySearchTree.add(separated[0], separated[1]);
+            binarySearchTree.add(separated[0].toLowerCase(), separated[1].toLowerCase());
         }
     }
     /**
@@ -57,6 +57,7 @@ public class Model {
     public ArrayList<String> translate(){
         ArrayList<String> tempList = new ArrayList<String>();
         for (String p : textFileList){
+            p = p.toLowerCase();
             if (binarySearchTree.getValueByKey(p) != null){
                 tempList.add(binarySearchTree.getValueByKey(p));
             } else {

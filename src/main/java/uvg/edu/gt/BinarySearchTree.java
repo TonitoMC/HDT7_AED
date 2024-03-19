@@ -12,7 +12,11 @@ import java.util.ArrayList;
  * @version 1.0
  * @since 18-03-2024
  */
-//https://stackoverflow.com/questions/11263244/java-how-do-i-implement-a-generic-binary-search-tree
+
+/**
+ * Referencia BST https://stackoverflow.com/questions/11263244/java-how-do-i-implement-a-generic-binary-search-tree
+ * realice modificaciones a la implementacion para que funcionara de manera mas adecuada con el programa
+ */
 public class BinarySearchTree<K extends Comparable<K>, V> {
     /**
      * La clase nodo se utiliza para almacenar datos en el BST, toma como 'data' un Association
